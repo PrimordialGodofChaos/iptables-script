@@ -29,7 +29,7 @@ def redirect_traffic(): # Перенаправляем обработку вхо
         return "Correct: Traffic redirected to new chains"
     except:
         return "Error: You can't redirect traffic to new chains"
-def tcp_accept_rules(): # В цепочке для TCP-трафика создаем правила фильтрации:
+def tcp_accept_rules():
     try:
         os.system('iptables -A TCP_IN -p tcp --dport 139 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT')
         os.system('iptables -A TCP_IN -p tcp --dport 445 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT')
