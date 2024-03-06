@@ -1,7 +1,7 @@
 import os
 import time
 
-t = 1 # Задержка
+t = 1
 
 def run():
     print(chain_create())
