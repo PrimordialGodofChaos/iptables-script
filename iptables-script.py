@@ -57,3 +57,4 @@ def udp_deny_rules():
         return 'Correct: Other udp-connections created'
     except:
         return "Error: You can't to block other udp-connections with to log events"
+run()
